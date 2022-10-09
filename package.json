@@ -5,11 +5,11 @@
     "main": "index.js",
     "scripts": {
         "build": "tsc",
-        "start": "node build/src-publisher/index.js",
-        "start:c": "node build/src-consumer/index.js",
+        "start:producer": "node build/src-publisher/index.js",
+        "start:consumer": "node build/src-consumer/index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "tsc-watch --onSuccess \"node ./build/src-publisher/index.js\"",
-        "devc": "tsc-watch --onSuccess \"node ./build/src-consumer/index.js\""
+        "dev:producer": "tsc-watch --onSuccess \"node ./build/src-publisher/index.js\"",
+        "dev:consumer": "tsc-watch --onSuccess \"node ./build/src-consumer/index.js\""
     },
     "author": "Shashank",
     "license": "ISC",
