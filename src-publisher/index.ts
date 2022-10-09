@@ -3,7 +3,7 @@ config();
 import { connect } from "amqplib";
 
 const URL = `amqp://${process.env.User}:${process.env.Password}@${process.env.IP}:${process.env.Port}/${process.env.vHost}`;
-const queue = "jack-test";
+const queue = process.env.Queue;
 
 (async () => {
     try {
